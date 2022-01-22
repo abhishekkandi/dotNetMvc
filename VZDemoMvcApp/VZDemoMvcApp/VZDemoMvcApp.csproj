@@ -17,7 +17,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <Use64BitIISExpress />
+    <Use64BitIISExpress>false</Use64BitIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -45,6 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -112,21 +115,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AngularDataController.cs" />
+    <Compile Include="Controllers\AppController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\JoggingRecordsController .cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\JoggingRecord.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Angular\.gitignore" />
+    <Content Include="Angular\e2e\protractor.conf.js" />
+    <Content Include="Angular\src\app\app.component.html" />
+    <Content Include="Angular\src\favicon.ico" />
+    <Content Include="Angular\src\index.html" />
+    <Content Include="Angular\src\karma.conf.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -137,6 +145,22 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="package.json" />
+    <Content Include="Angular\.editorconfig" />
+    <Content Include="Angular\angular.json" />
+    <Content Include="Angular\e2e\tsconfig.e2e.json" />
+    <Content Include="Angular\package-lock.json" />
+    <Content Include="Angular\package.json" />
+    <Content Include="Angular\README.md" />
+    <Content Include="Angular\src\app\app.component.scss" />
+    <Content Include="Angular\src\assets\.gitkeep" />
+    <Content Include="Angular\src\browserslist" />
+    <Content Include="Angular\src\styles.scss" />
+    <Content Include="Angular\src\tsconfig.app.json" />
+    <Content Include="Angular\src\tsconfig.spec.json" />
+    <Content Include="Angular\src\tslint.json" />
+    <Content Include="Angular\tsconfig.json" />
+    <Content Include="Angular\tslint.json" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -162,10 +186,10 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\AngularData\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -179,6 +203,22 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Angular\e2e\src\app.e2e-spec.ts" />
+    <TypeScriptCompile Include="Angular\e2e\src\app.po.ts" />
+    <TypeScriptCompile Include="Angular\src\app\app.component.ts" />
+    <TypeScriptCompile Include="Angular\src\app\app.module.ts" />
+    <TypeScriptCompile Include="Angular\src\app\shared\api.service.ts" />
+    <TypeScriptCompile Include="Angular\src\app\shared\JoggingRecord.ts" />
+    <TypeScriptCompile Include="Angular\src\environments\environment.prod.ts" />
+    <TypeScriptCompile Include="Angular\src\environments\environment.ts" />
+    <TypeScriptCompile Include="Angular\src\main.ts" />
+    <TypeScriptCompile Include="Angular\src\polyfills.ts" />
+    <TypeScriptCompile Include="Angular\src\test.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
