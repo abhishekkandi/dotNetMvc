@@ -1,7 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
-import JoggingRecord from './shared/JoggingRecord';
-import ApiService from './shared/api.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,16 +6,4 @@ import ApiService from './shared/api.service';
   styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent implements OnInit {
-  joggingRecords: Array<JoggingRecord>;
-
-  constructor(private apiService: ApiService) {
-  }
-
-  ngOnInit() {
-    this.apiService.getAll().subscribe(data => {
-      debugger
-      this.joggingRecords = data;
-    });
-  }
-}
+export class AppComponent {}
