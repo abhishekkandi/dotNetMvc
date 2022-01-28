@@ -25,7 +25,7 @@
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>	
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -128,13 +128,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Angular\.gitignore" />
-    <Content Include="Angular\e2e\protractor.conf.js" />
-    <Content Include="Angular\src\app\app.component.html" />
-    <Content Include="Angular\src\favicon.ico" />
-    <Content Include="Angular\src\index.html" />
-    <Content Include="Angular\src\karma.conf.js" />
-    <Content Include="Angular\src\todo\todo.component.html" />
+    <None Include="Angular\.gitignore" />
+    <None Include="Angular\e2e\protractor.conf.js" />
+    <None Include="Angular\src\app\app.component.html" />
+    <None Include="Angular\src\favicon.ico" />
+    <None Include="Angular\src\index.html" />
+    <None Include="Angular\src\karma.conf.js" />
+    <None Include="Angular\src\todo\todo.component.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -146,22 +146,22 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="package.json" />
-    <Content Include="Angular\.editorconfig" />
-    <Content Include="Angular\angular.json" />
-    <Content Include="Angular\e2e\tsconfig.e2e.json" />
-    <Content Include="Angular\package-lock.json" />
-    <Content Include="Angular\package.json" />
-    <Content Include="Angular\README.md" />
-    <Content Include="Angular\src\app\app.component.scss" />
-    <Content Include="Angular\src\assets\.gitkeep" />
-    <Content Include="Angular\src\browserslist" />
-    <Content Include="Angular\src\styles.scss" />
-    <Content Include="Angular\src\tsconfig.app.json" />
-    <Content Include="Angular\src\tsconfig.spec.json" />
-    <Content Include="Angular\src\tslint.json" />
-    <Content Include="Angular\tsconfig.json" />
-    <Content Include="Angular\tslint.json" />
-    <Content Include="Angular\src\todo\todo.component.scss" />
+    <None Include="Angular\.editorconfig" />
+    <None Include="Angular\angular.json" />
+    <None Include="Angular\e2e\tsconfig.e2e.json" />
+    <None Include="Angular\package-lock.json" />
+    <None Include="Angular\package.json" />
+    <None Include="Angular\README.md" />
+    <None Include="Angular\src\app\app.component.scss" />
+    <None Include="Angular\src\assets\.gitkeep" />
+    <None Include="Angular\src\browserslist" />
+    <None Include="Angular\src\styles.scss" />
+    <None Include="Angular\src\tsconfig.app.json" />
+    <None Include="Angular\src\tsconfig.spec.json" />
+    <None Include="Angular\src\tslint.json" />
+    <None Include="Angular\tsconfig.json" />
+    <None Include="Angular\tslint.json" />
+    <None Include="Angular\src\todo\todo.component.scss" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="Scripts\Dist\main.js.map" />
     <Content Include="Scripts\Dist\polyfills.js.map" />
