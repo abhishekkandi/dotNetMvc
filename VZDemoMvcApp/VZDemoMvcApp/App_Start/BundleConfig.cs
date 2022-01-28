@@ -26,17 +26,17 @@ namespace VZDemoMvcApp
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 
-            bundles.Add(new ScriptBundle("~/bundles/Angular")
+            bundles.Add(new Bundle("~/bundles/angular")
               .Include(
-                "~/bundles/AngularOutput/inline.*",
-                "~/bundles/AngularOutput/polyfills.*",
-                "~/bundles/AngularOutput/scripts.*",
-                "~/bundles/AngularOutput/vendor.*",
-                "~/bundles/AngularOutput/runtime.*",
-                "~/bundles/AngularOutput/main.*"));
+                "~/Scripts/Dist/inline.*",
+                "~/Scripts/Dist/polyfills.*",
+                "~/Scripts/Dist/scripts.*",
+                "~/Scripts/Dist/vendor.*",
+                "~/Scripts/Dist/runtime.*",
+                "~/Scripts/Dist/main.*"));
 
-            bundles.Add(new StyleBundle("~/Content/Angular")
-                .Include("~/bundles/AngularOutput/styles.*"));
+            bundles.Add(new StyleBundle("~/bundles/angular-css")
+                .Include("~/Scripts/Dist/styles.*"));
         }
     }
 }

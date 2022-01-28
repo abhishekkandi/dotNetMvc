@@ -1,9 +1,20 @@
 ﻿@{
-    ViewBag.Title = "Index";
+    Layout = null;
 }
 
-@Styles.Render("~/Content/Angular")
-
-<app-root></app-root>
-
-@Scripts.Render("~/bundles/Angular")
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @Styles.Render("~/bundles/angular-css")
+</head>
+<body>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <app-root></app-root>
+        </main>
+    </div>
+    @Scripts.Render("~/bundles/angular")
+</body>
+</html>
