@@ -17,7 +17,8 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <Use64BitIISExpress>false</Use64BitIISExpress>
+    <Use64BitIISExpress>
+    </Use64BitIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -162,7 +163,19 @@
     <Content Include="Angular\tslint.json" />
     <Content Include="Angular\src\todo\todo.component.scss" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Scripts\Dist\main.js.map" />
+    <Content Include="Scripts\Dist\polyfills.js.map" />
+    <Content Include="Scripts\Dist\runtime.js.map" />
+    <Content Include="Scripts\Dist\styles.js.map" />
+    <Content Include="Scripts\Dist\vendor.js.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\Dist\favicon.ico" />
+    <Content Include="Scripts\Dist\index.html" />
+    <Content Include="Scripts\Dist\main.js" />
+    <Content Include="Scripts\Dist\polyfills.js" />
+    <Content Include="Scripts\Dist\runtime.js" />
+    <Content Include="Scripts\Dist\styles.js" />
+    <Content Include="Scripts\Dist\vendor.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -236,7 +249,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>31260</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:31260/</IISUrl>
+          <IISUrl>http://localhost:55555/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

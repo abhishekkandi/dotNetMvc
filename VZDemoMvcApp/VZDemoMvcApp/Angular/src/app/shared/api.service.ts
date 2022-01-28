@@ -7,7 +7,7 @@ import TodoItem from '../../todo/todoItem';
 @Injectable()
 export default class ApiService {
 
-  public API = 'http://localhost:31260';
+  public API = 'http://localhost:55555';
   public TODO_ITEMS_ENDPOINT = `${this.API}/todo`;
 
   constructor(private http: HttpClient) { }
